@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import "./reset.css"
-import HomePage from "./HomePage/HomePage.jsx"
-import MainMenu from './MenuPage/MainMenu.jsx'
+import HomePage from "./components/HomePage/HomePage.jsx"
+import MainMenu from './components/MainMenuPage/MainMenu.jsx'
+
 import {
     BrowserRouter as Router,
     Switch,

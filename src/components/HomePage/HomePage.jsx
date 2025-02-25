@@ -1,5 +1,6 @@
-import homeImg from "../assets/images/iteration-1-images/home-banner.png"
-import logo from "../assets/images/iteration-1-images/logo.svg"
+import homeImg from "../../assets/images/iteration-1-images/home-banner.png"
+import logo from "../../assets/images/iteration-1-images/logo.svg"
+import "../../reset.css"
 import "./HomePage.css"
 import { Button } from 'reactstrap'
 import { useHistory } from "react-router-dom";
@@ -19,9 +20,8 @@ function handleClick() {
          <div className='header'>
          <p>KOD ACIKTIRIR</p>
          <p>PİZZA,DOYURUR</p>
-         </div>
-       
-         <Button className='homeButton' onClick={handleClick}>ACIKTIM</Button>
+         </div> 
+         <button className='homeButton' onClick={handleClick}>ACIKTIM</button>
      </div>
  </main>
  </>
