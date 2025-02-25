@@ -44,14 +44,14 @@
     display: flex;
     flex: 2;
     margin-left: 38%;
-    margin-right: 32%;
+    margin-right: 34%;
     justify-content: space-between;
     flex-direction: column;
    
     
 }
 .order{
-    background-color: pink;
+
   
     display: flex;
     flex-direction: column;
@@ -64,16 +64,15 @@
 
 }
 .option{
-    background-color: rgb(110, 204, 168);
+  
    
     display: flex;
-    gap: 40%;
+    justify-content: start;
+   
 
 }
 
-.optionOrder{
-    margin-bottom: 10px
-}
+
 .hoverPointer:hover {
     cursor: pointer;
 }
@@ -81,7 +80,7 @@
 .materials {
     margin-top: 35px;
     display: flex;
-    gap:30px;
+    row-gap: 30px;
     justify-content: start;
     flex-wrap: wrap;
 }
@@ -89,12 +88,22 @@
 
     width: 166px;
     height: 26px;
+  
    
 }
 .optionHeader{
-    padding-bottom: 50px;
+ 
     font-size: 20px;
     font-weight: 500;
     color: black;
 
+}
+.orderFinish{
+    margin-top: 30px;
+}
+.resultGroup{
+    margin-top: 1em;
+    display:  flex;
+    justify-content: space-between;
+ 
 }

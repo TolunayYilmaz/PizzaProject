@@ -1,5 +1,6 @@
-import { FormGroup, Label, Input, Col, Form } from 'reactstrap';
+import { FormGroup, Label, Input, Col, Card, Button, ButtonGroup, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
 import logo from "../../assets/images/iteration-1-images/logo.svg"
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./MainMenu.css"
 function MainMenu() {
 
@@ -30,7 +31,6 @@ function MainMenu() {
     "Jalapeno",
     "Sarımsak",
     "Biber",
-    "Sucuk",
     "Ananas",
     "Kabak"
   ];
@@ -101,17 +101,17 @@ function MainMenu() {
                 name="select"
                 type="select"
                 defaultValue=""
-                style={{color:"black"}}
+                style={{ color: "black" }}
               >
                 {doughType.map((item) => {
 
                   if (item === "Hamur Kalınlığı") {
-                    return <option style={{color:"black"}} value="" disabled hidden>
+                    return <option style={{ color: "black" }} value="" disabled hidden>
                       {item}
                     </option>
                   }
                   else {
-                    return <option style={{color:"black"}} key={item} value={item}>{item}</option>
+                    return <option style={{ color: "black" }} key={item} value={item}>{item}</option>
                   }
 
                 })}
@@ -122,20 +122,83 @@ function MainMenu() {
         </div>
 
         <div className='addMaterial'>
-          <p className='optionHeader' style={{paddingBottom: "15px"}}>Ek Malzemeler</p>
+          <p className='optionHeader' style={{ paddingBottom: "15px" }}>Ek Malzemeler</p>
           <p>En Fazla 10 malzeme seçebilirsiniz.5₺</p>
           <div className='materials'>
             {malzemeler.map((item) => {
 
-             return <div key={item}> <FormGroup >
-                <Input type="checkbox" />
-                <Label check style={{ marginLeft: "10px", fontWeight:"600"}}>
+              return <div key={item}> <FormGroup >
+                <Input id={item} type="checkbox" />
+                <Label className='hoverPointer' htmlFor={item} check style={{ marginLeft: "10px", fontWeight: "600" }}>
                   {item}
                 </Label>
               </FormGroup></div>
             })}
           </div>
         </div>
+
+        <div className='orderFinish'>
+          <p className="optionHeader">Sipariş Notu</p>
+
+          <Input
+
+            style={{ width: "533px", height: "56px"  }}
+
+            placeholder="Siparişinize eklemek istediğiniz bir not var mı?"
+          />
+          
+      
+          <div style={{margin:"20px auto", width: "100%", height: "1px", boxShadow: "0px 0.5px 0px #5F5F5F80" }}></div>
+
+         <div className='resultGroup'>
+        
+            <ButtonGroup style={{ width: "170px", height: "57px"}}>
+              <Button style={{ background: "#FDC913", color: "black", fontWeight: "bold",border:"none" }}>
+                -
+              </Button>
+              <Button style={{  disabled:true,background: "white",border: "1px solid #5F5F5F80", marginRight: "1px" ,cursor:"default", boxShadow:"none" }}>
+
+              </Button>
+              <Button style={{ background: "#FDC913", color: "black", fontWeight: "bold" ,border:"none"}}>
+                +
+              </Button>
+            </ButtonGroup>
+          
+         
+            <Card
+              style={{
+                width: '350px',
+                height: '255px'
+              }}
+            >
+
+              <CardBody>
+                <CardTitle tag="h5">
+                  Sipariş Toplamı
+                </CardTitle>
+                <CardSubtitle
+                  className="mb-2 text-muted"
+                  tag="h6"
+                >
+                  Seçimler
+                </CardSubtitle>
+                <CardSubtitle
+                  className="mb-2"
+                  tag="h6"
+                  style={{color:"red"}}
+                >
+                  Toplam
+                </CardSubtitle>
+
+                <Button>
+                  Button
+                </Button>
+              </CardBody>
+            </Card>
+         
+         </div>
+        </div>
+
       </main>
     </div>);
 }
