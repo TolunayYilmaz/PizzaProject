@@ -6,6 +6,7 @@
  
 }
 .mainMenuPage{
+   
     width: 100%;
     height: 100vh;
     display: flex;
@@ -52,7 +53,7 @@
 }
 .order{
 
-  
+
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -65,18 +66,22 @@
 }
 .option{
   
-   
+   margin-top: 30px;
     display: flex;
     justify-content: start;
    
 
 }
-
+.optionOrder{
+    margin-bottom: 15px;
+}
 
 .hoverPointer:hover {
     cursor: pointer;
 }
-
+.addMaterial{
+    margin-top: 30px;
+}
 .materials {
     margin-top: 35px;
     display: flex;
@@ -99,11 +104,27 @@
 
 }
 .orderFinish{
-    margin-top: 30px;
+    margin-top: 50px;
 }
 .resultGroup{
     margin-top: 1em;
     display:  flex;
     justify-content: space-between;
  
+}
+.cardDesign{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-bottom: 10%;
+
+}
+.cardTextDesign{
+   
+    display: flex;
+    justify-content: space-between;
+   
+
+
 }
