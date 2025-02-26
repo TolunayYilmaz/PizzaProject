@@ -298,7 +298,7 @@ function MainMenu() {
                     <CardSubtitle
 
                       tag="h6"
-                      style={{ margin: "0px" }}
+                      style={{ margin: "0px" ,color:"#5F5F5F" }}
                     >
                       Seçimler
                     </CardSubtitle>

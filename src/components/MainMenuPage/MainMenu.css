@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;700&display=swap');
 *{
  font-family: 'Barlow', sans-serif;
- color:#5F5F5F;
+
  
 }
 .mainMenuPage{
@@ -11,7 +11,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
- 
+    color:#5F5F5F;
   
   
 }

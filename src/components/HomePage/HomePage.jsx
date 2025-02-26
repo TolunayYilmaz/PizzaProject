@@ -18,8 +18,8 @@ function handleClick() {
      <div className='mid'>
          <img src={logo} alt="" />
          <div className='header'>
-         <p>KOD ACIKTIRIR</p>
-         <p>PİZZA,DOYURUR</p>
+         <div>KOD ACIKTIRIR</div>
+         <div>PİZZA,DOYURUR</div>
          </div> 
          <button className='homeButton' onClick={handleClick}>ACIKTIM</button>
      </div>
