@@ -23,7 +23,7 @@ function mainmenu() {
             <span>PIZZA, DOYURUR</span>
           </div>
 
-          <button className="homeButton" onClick={handleClick}>
+          <button className="homeButton" data-cy="startCy" onClick={handleClick}>
             ACIKTIM
           </button>
         </div>

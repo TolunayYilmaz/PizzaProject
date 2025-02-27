@@ -118,10 +118,11 @@
 }
 .cardDesign{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     flex-direction: column;
-    margin-left: 10%;
+    margin-left: 5%;
     margin-bottom: 10%;
+    gap:20px;
 
 }
 .cardTextDesign{

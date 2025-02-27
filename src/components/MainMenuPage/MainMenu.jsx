@@ -201,6 +201,7 @@ function MainMenu() {
                 id="small"
                 value="Küçük"
                 onClick={handleChange}
+                data-cy="radioSmall"
               />{" "}
               <Label className="hoverPointer" htmlFor="small">
                 Küçük
@@ -215,6 +216,7 @@ function MainMenu() {
                 value="Orta"
                 key="boyut"
                 onClick={handleChange}
+                data-cy="radioMedium"
               />{" "}
               <Label className="hoverPointer" htmlFor="medium">
                 Orta
@@ -228,6 +230,7 @@ function MainMenu() {
                 value="Büyük"
                 key="boyut"
                 onClick={handleChange}
+                data-cy="radioBig"
               />{" "}
               <Label className="hoverPointer" htmlFor="large">
                 Büyük
@@ -253,6 +256,7 @@ function MainMenu() {
                 defaultValue=""
                 style={{ color: "black", width: "auto" }}
                 invalid={!orderPizza.hamurTipi}
+                data-cy="elementCy"
               >
                 {doughType.map((item) => {
                   if (item === "Hamur Kalınlığı") {
@@ -292,7 +296,7 @@ function MainMenu() {
             En Fazla 10 malzeme seçebilirsiniz.5₺
           </p>
           <div className="materials">
-            {malzemeler.map((item) => {
+            {malzemeler.map((item,index) => {
               return (
                 <div key={item}>
                   {" "}
@@ -307,6 +311,7 @@ function MainMenu() {
                         orderPizza.siparisMalzeme.length >= 10 &&
                         !orderPizza.siparisMalzeme.includes(item)
                       }
+                      data-cy={`checkboxCy${index}`}
                     />
                     <Label
                       className="hoverPointer"
@@ -340,6 +345,7 @@ function MainMenu() {
               onChange={handleChange}
               placeholder="Lütfen isminizi giriniz."
               invalid={orderPizza.isim.length < 3}
+              data-cy="nameCy"
             />
             <FormFeedback>Lütfen isim alanı boş bırakmayınız.</FormFeedback>
           </FormGroup>
@@ -359,6 +365,7 @@ function MainMenu() {
             style={{ width: "100%", height: "56px" }}
             onChange={handleChange}
             placeholder="Siparişinize eklemek istediğiniz bir not var mı?"
+            data-cy="commentCy"
           />
 
           <div
@@ -413,6 +420,7 @@ function MainMenu() {
                 onClick={() =>
                   orderPizza.pizzaAdet > 1 ? handleChangePizzaCount(-1) : ""
                 }
+                 data-cy="butonSmallCy"
               >
                 -
               </Button>
@@ -436,8 +444,10 @@ function MainMenu() {
                   color: "black",
                   fontWeight: "bold",
                   border: "none",
+                 
                 }}
                 onClick={() => handleChangePizzaCount(1)}
+                data-cy="butonBigCy"
               >
                 +
               </Button>
@@ -448,6 +458,7 @@ function MainMenu() {
                 onClick={handleSubmit}
                 disabled={isDisabled}
                 style={{background:"#FDC913", color:"black" }}
+                data-cy="butonClick"
            
               >
                 Sipariş Ver
