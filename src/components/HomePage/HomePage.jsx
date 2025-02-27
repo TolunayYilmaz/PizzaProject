@@ -14,7 +14,7 @@ function mainmenu() {
   return (
     <>
       <img src={homeImg} className="pageImg" alt="" />
-      <main>
+      <div>
         <div className="mid">
           <img src={logo} alt="" />
 
@@ -27,7 +27,7 @@ function mainmenu() {
             ACIKTIM
           </button>
         </div>
-      </main>
+      </div>
     </>
   );
 }
