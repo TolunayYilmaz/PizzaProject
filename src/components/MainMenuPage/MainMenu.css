@@ -108,18 +108,18 @@
     margin-top: 50px;
 }
 .resultGroup{
-    margin-top: 1em;
-    display:  flex;
-    justify-content: space-between;
+
+    display: flex;
     flex-wrap: wrap;
-    
+    flex-direction: row-reverse;
+    justify-content: space-between;
+ 
  
 }
 .cardDesign{
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-   
     margin-left: 10%;
     margin-bottom: 10%;
 
@@ -132,10 +132,24 @@
 .resultCard{
     
         width: 350px;
-        height: 255px
+        height: 255px;
+    
       
 }
+.cardButton{
+    font-size: 18px;
+    font-weight: 500;
+    width: 66%;
+    height:62px ;
+    border: none;
 
+  
+}
+.resultButton{
+    width: 170px;
+    height: 57px;
+
+}
 
 @media (max-width: 540px) {
    
@@ -160,12 +174,15 @@
   }
   .addMaterial{width: 100%;}
   .resultGroup{
-    flex-direction: column-reverse;
+    flex-direction: row;
     width: 100%;
   }
   .resultCard{width: 100%;}
-  .resultButton{
-    margin-bottom: 50px;
+  .resultButton,
+  .cardButton {
+    width: 47%;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
  
   }

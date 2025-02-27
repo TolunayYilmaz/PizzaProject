@@ -371,7 +371,38 @@ function MainMenu() {
           ></div>
 
           <div className="resultGroup">
-            <ButtonGroup style={{ width: "170px", height: "57px" }}>
+            
+            <Card
+             className="resultCard"
+            >
+              <CardBody className="cardDesign">
+                <CardTitle tag="h5" style={{ marginTop: "10px" }}>
+                  Sipariş Toplamı
+                </CardTitle>
+                <div>
+                  <div className="cardTextDesign">
+                    <CardSubtitle
+                      tag="h6"
+                      style={{ margin: "0px", color: "#5F5F5F" }}
+                    >
+                      Seçimler
+                    </CardSubtitle>
+                    <h6>{orderPizza.malzemeFiyat}₺</h6>
+                  </div>
+                  <div className="cardTextDesign">
+                    <CardSubtitle
+                      tag="h6"
+                      style={{ color: "red", margin: "0px" }}
+                    >
+                      Toplam
+                    </CardSubtitle>
+                    <h6 style={{ color: "red" }}>{orderPizza.toplamFiyat}₺</h6>
+                  </div>
+                </div>
+              </CardBody>
+             
+            </Card>
+            <ButtonGroup className="resultButton" >
               <Button
                 style={{
                   background: "#FDC913",
@@ -412,50 +443,15 @@ function MainMenu() {
               </Button>
             </ButtonGroup>
 
-            <Card
-             className="resultCard"
-            >
-              <CardBody className="cardDesign">
-                <CardTitle tag="h5" style={{ marginTop: "10px" }}>
-                  Sipariş Toplamı
-                </CardTitle>
-                <div>
-                  <div className="cardTextDesign">
-                    <CardSubtitle
-                      tag="h6"
-                      style={{ margin: "0px", color: "#5F5F5F" }}
-                    >
-                      Seçimler
-                    </CardSubtitle>
-                    <h6>{orderPizza.malzemeFiyat}₺</h6>
-                  </div>
-                  <div className="cardTextDesign">
-                    <CardSubtitle
-                      tag="h6"
-                      style={{ color: "red", margin: "0px" }}
-                    >
-                      Toplam
-                    </CardSubtitle>
-                    <h6 style={{ color: "red" }}>{orderPizza.toplamFiyat}₺</h6>
-                  </div>
-                </div>
-              </CardBody>
-              <Button
+            <Button
+                className="cardButton"
                 onClick={handleSubmit}
                 disabled={isDisabled}
-                style={{
-                  fontSize: "18px",
-                  fontWeight: "500",
-                  width: "100%",
-                  height: "62px",
-                  color: "black",
-                  background: "#FDC913",
-                  border: "none",
-                }}
+                style={{background:"#FDC913", color:"black" }}
+           
               >
                 Sipariş Ver
               </Button>
-            </Card>
           </div>
         </div>
       </main>

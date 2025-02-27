@@ -9,12 +9,29 @@
 }
 
 .message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 86px;
-    font-weight: 300;
+    font-weight: 200;
+    line-height: 1.1;/* Satır Aralığı */
     color: white;
-    width: 723px;
-    height: 195px;
-    line-height: 92px;
-    text-align: center;
 
 }
+
+@media (max-width: 540px) {
+   
+    .mid {
+        width: 398px;
+        height: 540px;
+      }
+    .message {
+        flex-direction: column; 
+        justify-content: center;
+        text-align: center;
+      }
+    
+      .header span {
+        display: block; 
+      }
+  }
