@@ -41,7 +41,7 @@ body {
     flex-direction: column;
     position: relative; 
     color: white;
-    width: 35em;
+    width: 700px;
     height: 25em; 
    
 }
@@ -56,3 +56,20 @@ body {
     font-weight: 500;
     
 }
+
+@media (max-width: 540px) {
+   
+    .mid {
+        width: 398px;
+        height: 540px;
+      }
+    .header {
+        flex-direction: column; 
+        justify-content: center;
+        text-align: center;
+      }
+    
+      .header span {
+        display: block; 
+      }
+  }

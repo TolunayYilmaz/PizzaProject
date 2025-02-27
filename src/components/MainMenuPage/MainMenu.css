@@ -12,6 +12,7 @@
     display: flex;
     flex-direction: column;
     color:#5F5F5F;
+    left: 0%;
   
   
 }
@@ -110,12 +111,15 @@
     margin-top: 1em;
     display:  flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    
  
 }
 .cardDesign{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     flex-direction: column;
+   
     margin-left: 10%;
     margin-bottom: 10%;
 
@@ -124,7 +128,44 @@
    
     display: flex;
     justify-content: space-between;
-   
-
-
 }
+.resultCard{
+    
+        width: 350px;
+        height: 255px
+      
+}
+
+
+@media (max-width: 540px) {
+   
+ .mainMenuPage{
+    top: 0;
+  left: 0;
+  width: 100vw;
+ }
+  .pageMap{
+    margin-left: 13%;
+  }
+  .mainMenu{
+    margin-left: 13%;
+    margin-right: 10%;
+
+  }
+  .order{
+    width: 100%;
+  }
+  .option{
+    width: 100%;
+  }
+  .addMaterial{width: 100%;}
+  .resultGroup{
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .resultCard{width: 100%;}
+  .resultButton{
+    margin-bottom: 50px;
+  }
+ 
+  }
