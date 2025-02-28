@@ -3,8 +3,7 @@ import "./EndPage.css";
 
 function EndPage() {
   return (
-    <>
-      <div className="back"></div>
+    <div className="back">
       <div className="mid">
         <img src={logo} alt="" />
         <div className="message">
@@ -12,9 +11,7 @@ function EndPage() {
           <span>Siparişiniz Alındı.</span>
         </div>
       </div>
-
- 
-    </>
+    </div>
   );
 }
 

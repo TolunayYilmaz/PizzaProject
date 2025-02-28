@@ -1,11 +1,14 @@
 import HomePage from "./HomePage/HomePage.jsx";
 import MainMenu from "./MainMenuPage/MainMenu.jsx";
 import EndPage from "./EndPage/EndPage.jsx";
-
+import Footer from "./Footer/Footer.jsx"
 import { Switch, Route } from "react-router-dom";
+
+
 function App() {
   return (
-    <main>
+    <>
+      <main>
       <Switch>
         <Route exact path="/">
           <HomePage />
@@ -17,8 +20,11 @@ function App() {
           <EndPage />
         </Route>
       </Switch>
-      <footer>FooterDesign</footer>
+     <Footer/>
     </main>
+   
+    </>
+  
 
   );
 }

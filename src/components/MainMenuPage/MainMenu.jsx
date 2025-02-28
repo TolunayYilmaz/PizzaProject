@@ -1,4 +1,3 @@
-import { FormGroup, Label, Input, Col, FormFeedback } from "reactstrap";
 import { useEffect, useState } from "react";
 import logo from "../../assets/images/iteration-1-images/logo.svg";
 import "bootstrap/dist/css/bootstrap.min.css";

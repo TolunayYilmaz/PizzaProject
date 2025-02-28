@@ -4,7 +4,29 @@
     box-sizing: border-box;
 
 }
+#root{
+    width: 100%;
+}
 button:hover{
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);/*buton gölge efekt*/
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    
+}
+
+footer{
+  
+    height: 561px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    
 }

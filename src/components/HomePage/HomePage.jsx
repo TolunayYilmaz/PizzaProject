@@ -1,8 +1,8 @@
 import homeImg from "../../assets/images/iteration-1-images/home-banner.png";
 import logo from "../../assets/images/iteration-1-images/logo.svg";
-import "../../reset.css";
+
 import "./HomePage.css";
-import { Button } from "reactstrap";
+
 import { useHistory } from "react-router-dom";
 
 function mainmenu() {
@@ -13,8 +13,8 @@ function mainmenu() {
 
   return (
     <>
-      <img src={homeImg} className="pageImg" alt="" />
-      <div>
+      {/* <img src={homeImg} className="pageImg" alt="" /> */}
+      <div className="pageImg">
         <div className="mid">
           <img src={logo} alt="" />
 
