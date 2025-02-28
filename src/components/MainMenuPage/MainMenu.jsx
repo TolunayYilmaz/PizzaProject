@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import logo from "../../assets/images/iteration-1-images/logo.svg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./MainMenu.css";
-import { useHistory } from "react-router-dom";
+import { useHistory,Link } from "react-router-dom";
 import axios from "axios";
 import OrderFinish from "./OrderFinish/OrderFinish";
 import AddMaterial from "./AddMaterial/AddMaterial";
@@ -149,7 +149,12 @@ function MainMenu() {
         <div className="headImg">
           <img src={logo} alt="" />
         </div>
-        <div className="pageMap">Anasayfa - Sipariş Oluştur</div>
+        <div className="pageMap">
+          <Link to="/" style={{color:"white"}}>
+            Anasayfa
+          </Link>{" "}
+          - Sipariş Oluştur
+        </div>
       </header>
       <div className="mainMenu">
         <Order order={order} />
