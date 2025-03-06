@@ -1,25 +1,29 @@
 @import "tailwindcss";
 
-.mainMenu {
-  margin: 0px;
+.homeMainMenu {
+
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   background-color: #faf7f2;
+  font-size: 16px;
+  line-height: 28.8px;
+  font-weight: 400;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  flex-direction: column;
 }
 .menuUp {
   width: 1072px;
   height: auto;
-
   display: flex;
   justify-items: center;
   margin-bottom: 1%;
   margin-top: 1%;
 }
-.menuHead {
 
-}
 .order1 {
   background-image: url("../../assets/images/iteration-2-images/cta/kart-1.png");
 }
@@ -32,6 +36,7 @@
 .menuIcons {
   margin-top: 10px;
   width: 57%;
+ 
 }
 
 .menuDown{

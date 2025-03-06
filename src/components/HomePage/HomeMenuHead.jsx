@@ -35,7 +35,7 @@ function HomeMenu() {
   ];
 
   return (
-    <div className="py-24 sm:py-32 flex justify-center">
+    <div className="py-24 sm:py-32 flex justify-center bg-white">
     <div className="mx-auto max-w-7xl px-6 lg:px-8">
       <div className="grid max-w-lg grid-cols-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 items-center justify-center gap-x-8 gap-y-10 sm:gap-x-10 lg:mx-0 lg:max-w-none text-center">
         {menus.map((item, index) => (

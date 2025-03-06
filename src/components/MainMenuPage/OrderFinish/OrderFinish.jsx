@@ -5,7 +5,6 @@ import {
     CardBody,
     CardTitle,
     CardSubtitle,
-    Label,
     FormGroup,
     Input,
     FormFeedback

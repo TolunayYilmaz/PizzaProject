@@ -1,6 +1,6 @@
 function Order({order}) {
   return (
-    <div className="order" style={{ color: "#5F5F5F" }}>
+    <div className="order" style={{ color: "#5F5F5F"}}>
       <p style={{ fontWeight: "600", color: "black", fontSize: "22px" }}>
         {order.name}
       </p>

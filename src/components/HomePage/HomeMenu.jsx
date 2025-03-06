@@ -13,8 +13,6 @@ import {
   CardBody,
   CardTitle,
   Card,
-  CardSubtitle,
-  Button,
   CardText,
 } from "reactstrap";
 function HomeMenu() {
@@ -59,7 +57,7 @@ function HomeMenu() {
     },
   ];
   return (
-    <div className="mainMenu">
+    <div className="homeMainMenu">
       <div className="menuUp">
         <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-3 gap-y-2 px-0 py-24 sm:px-0 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
           <div className="order1 rounded-lg bg-gray-100 w-[530px] h-[449px]"></div>
